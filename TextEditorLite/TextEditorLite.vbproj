@@ -6,7 +6,7 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProjectGuid>{4340F8AF-23A6-4EE9-BA4E-3268F3BAC8EB}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <StartupObject>TextEditorLite.Module1</StartupObject>
+    <StartupObject>TextEditorLite.Program</StartupObject>
     <RootNamespace>TextEditorLite</RootNamespace>
     <AssemblyName>TextEditorLite</AssemblyName>
     <FileAlignment>512</FileAlignment>
@@ -73,7 +73,7 @@
     <Compile Include="BackSpace.vb" />
     <Compile Include="Clear.vb" />
     <Compile Include="ICommand.vb" />
-    <Compile Include="Module1.vb" />
+    <Compile Include="Program.vb" />
     <Compile Include="My Project\AssemblyInfo.vb" />
     <Compile Include="My Project\Application.Designer.vb">
       <AutoGen>True</AutoGen>
