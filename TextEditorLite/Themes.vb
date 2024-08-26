@@ -82,19 +82,19 @@ startMenu:
         System.Console.ResetColor()
         Select Case menu
             Case "black"
-                backColor = ConsoleColor.Black
+                menuColor = ConsoleColor.Black
             Case "white"
-                backColor = ConsoleColor.White
+                menuColor = ConsoleColor.White
             Case "red"
-                backColor = ConsoleColor.Red
+                menuColor = ConsoleColor.Red
             Case "blue"
-                backColor = ConsoleColor.DarkCyan
+                menuColor = ConsoleColor.DarkCyan
             Case "magenta"
-                backColor = ConsoleColor.Magenta
+                menuColor = ConsoleColor.Magenta
             Case "green"
-                backColor = ConsoleColor.Green
+                menuColor = ConsoleColor.Green
             Case "yellow"
-                backColor = ConsoleColor.Yellow
+                menuColor = ConsoleColor.Yellow
 
             Case Else
                 System.Console.ForegroundColor = ConsoleColor.White
@@ -105,4 +105,40 @@ startMenu:
                 GoTo startMenu
         End Select
     End Sub
+
+    Public Sub QuestionTitleColor()
+startTitle:
+
+        System.Console.ForegroundColor = ConsoleColor.Cyan
+        System.Console.Write("Write menu color(Black - White - Red - Blue - Magenta - Green - Yellow) : ")
+        System.Console.ForegroundColor = ConsoleColor.Yellow
+        Dim menu As String = Console.ReadLine().ToLower()
+        System.Console.ResetColor()
+        Select Case menu
+            Case "black"
+                menuColor = ConsoleColor.Black
+            Case "white"
+                menuColor = ConsoleColor.White
+            Case "red"
+                menuColor = ConsoleColor.Red
+            Case "blue"
+                menuColor = ConsoleColor.DarkCyan
+            Case "magenta"
+                menuColor = ConsoleColor.Magenta
+            Case "green"
+                menuColor = ConsoleColor.Green
+            Case "yellow"
+                menuColor = ConsoleColor.Yellow
+
+            Case Else
+                System.Console.ForegroundColor = ConsoleColor.White
+                System.Console.BackgroundColor = ConsoleColor.Red
+                System.Console.WriteLine("It is invalid")
+                System.Console.ResetColor()
+                System.Console.ReadKey()
+                GoTo startTitle
+        End Select
+    End Sub
+
+
 End Module
