@@ -3,4 +3,72 @@
     Public backColor As ConsoleColor = ConsoleColor.Black
     Public menuColor As ConsoleColor = ConsoleColor.DarkCyan
     Public titleColor As ConsoleColor = ConsoleColor.Red
+
+    Public Sub QuestionForeColor()
+startFore:
+
+        System.Console.ForegroundColor = ConsoleColor.Cyan
+        System.Console.Write("Write foreground color(Black - White - Red - Blue - Magenta - Green - Yellow) : ")
+        System.Console.ForegroundColor = ConsoleColor.Yellow
+        Dim fore As String = Console.ReadLine().ToLower()
+        System.Console.ResetColor()
+        Select Case fore
+            Case "black"
+                foreColor = ConsoleColor.Black
+            Case "white"
+                foreColor = ConsoleColor.White
+            Case "red"
+                foreColor = ConsoleColor.Red
+            Case "blue"
+                foreColor = ConsoleColor.DarkCyan
+            Case "magenta"
+                foreColor = ConsoleColor.Magenta
+            Case "green"
+                foreColor = ConsoleColor.Green
+            Case "yellow"
+                foreColor = ConsoleColor.Yellow
+
+            Case Else
+                System.Console.ForegroundColor = ConsoleColor.White
+                System.Console.BackgroundColor = ConsoleColor.Red
+                System.Console.WriteLine("It is invalid")
+                System.Console.ResetColor()
+                System.Console.ReadKey()
+                GoTo startFore
+        End Select
+    End Sub
+
+    Public Sub QuestionBackColor()
+startFore:
+
+        System.Console.ForegroundColor = ConsoleColor.Cyan
+        System.Console.Write("Write foreground color(Black - White - Red - Blue - Magenta - Green - Yellow) : ")
+        System.Console.ForegroundColor = ConsoleColor.Yellow
+        Dim fore As String = Console.ReadLine().ToLower()
+        System.Console.ResetColor()
+        Select Case fore
+            Case "black"
+                foreColor = ConsoleColor.Black
+            Case "white"
+                foreColor = ConsoleColor.White
+            Case "red"
+                foreColor = ConsoleColor.Red
+            Case "blue"
+                foreColor = ConsoleColor.DarkCyan
+            Case "magenta"
+                foreColor = ConsoleColor.Magenta
+            Case "green"
+                foreColor = ConsoleColor.Green
+            Case "yellow"
+                foreColor = ConsoleColor.Yellow
+
+            Case Else
+                System.Console.ForegroundColor = ConsoleColor.White
+                System.Console.BackgroundColor = ConsoleColor.Red
+                System.Console.WriteLine("It is invalid")
+                System.Console.ResetColor()
+                System.Console.ReadKey()
+                GoTo startFore
+        End Select
+    End Sub
 End Module
