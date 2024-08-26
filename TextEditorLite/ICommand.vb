@@ -1,5 +1,5 @@
 ﻿Public Interface ICommand
-    Function TextToExecute(TextExecute As String) As String
+    Function TextToExecute(execute As String) As String
 
-    Function TextToUndo(TextUndo As String) As String
+    Function TextToUndo(undo As String) As String
 End Interface
