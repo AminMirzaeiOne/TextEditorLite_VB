@@ -3,8 +3,8 @@
     Sub Main()
         Console.Clear()
         Console.ForegroundColor = ConsoleColor.Black
-        Console.BackgroundColor = ConsoleColor.Cyan
-        Dim logo = "Text Editor | v1.0"
+        Console.BackgroundColor = ConsoleColor.DarkCyan
+        Dim logo = "Text Editor | v1.0 - AminMirzaeiOne"
         Console.SetCursorPosition((Console.WindowWidth - logo.Length) / 2, Console.CursorTop)
         Console.WriteLine(logo)
 

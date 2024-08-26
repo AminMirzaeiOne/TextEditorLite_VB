@@ -73,6 +73,7 @@
     <Compile Include="BackSpace.vb" />
     <Compile Include="Clear.vb" />
     <Compile Include="ICommand.vb" />
+    <Compile Include="Information.vb" />
     <Compile Include="Program.vb" />
     <Compile Include="My Project\AssemblyInfo.vb" />
     <Compile Include="My Project\Application.Designer.vb">
