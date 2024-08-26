@@ -39,28 +39,28 @@ startFore:
     End Sub
 
     Public Sub QuestionBackColor()
-startFore:
+startBack:
 
         System.Console.ForegroundColor = ConsoleColor.Cyan
-        System.Console.Write("Write foreground color(Black - White - Red - Blue - Magenta - Green - Yellow) : ")
+        System.Console.Write("Write background color(Black - White - Red - Blue - Magenta - Green - Yellow) : ")
         System.Console.ForegroundColor = ConsoleColor.Yellow
-        Dim fore As String = Console.ReadLine().ToLower()
+        Dim back As String = Console.ReadLine().ToLower()
         System.Console.ResetColor()
-        Select Case fore
+        Select Case back
             Case "black"
-                foreColor = ConsoleColor.Black
+                backColor = ConsoleColor.Black
             Case "white"
-                foreColor = ConsoleColor.White
+                backColor = ConsoleColor.White
             Case "red"
-                foreColor = ConsoleColor.Red
+                backColor = ConsoleColor.Red
             Case "blue"
-                foreColor = ConsoleColor.DarkCyan
+                backColor = ConsoleColor.DarkCyan
             Case "magenta"
-                foreColor = ConsoleColor.Magenta
+                backColor = ConsoleColor.Magenta
             Case "green"
-                foreColor = ConsoleColor.Green
+                backColor = ConsoleColor.Green
             Case "yellow"
-                foreColor = ConsoleColor.Yellow
+                backColor = ConsoleColor.Yellow
 
             Case Else
                 System.Console.ForegroundColor = ConsoleColor.White
@@ -68,7 +68,7 @@ startFore:
                 System.Console.WriteLine("It is invalid")
                 System.Console.ResetColor()
                 System.Console.ReadKey()
-                GoTo startFore
+                GoTo startBack
         End Select
     End Sub
 End Module
