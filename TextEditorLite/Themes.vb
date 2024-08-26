@@ -71,4 +71,38 @@ startBack:
                 GoTo startBack
         End Select
     End Sub
+
+    Public Sub QuestionMenuColor()
+startMenu:
+
+        System.Console.ForegroundColor = ConsoleColor.Cyan
+        System.Console.Write("Write menu color(Black - White - Red - Blue - Magenta - Green - Yellow) : ")
+        System.Console.ForegroundColor = ConsoleColor.Yellow
+        Dim menu As String = Console.ReadLine().ToLower()
+        System.Console.ResetColor()
+        Select Case menu
+            Case "black"
+                backColor = ConsoleColor.Black
+            Case "white"
+                backColor = ConsoleColor.White
+            Case "red"
+                backColor = ConsoleColor.Red
+            Case "blue"
+                backColor = ConsoleColor.DarkCyan
+            Case "magenta"
+                backColor = ConsoleColor.Magenta
+            Case "green"
+                backColor = ConsoleColor.Green
+            Case "yellow"
+                backColor = ConsoleColor.Yellow
+
+            Case Else
+                System.Console.ForegroundColor = ConsoleColor.White
+                System.Console.BackgroundColor = ConsoleColor.Red
+                System.Console.WriteLine("It is invalid")
+                System.Console.ResetColor()
+                System.Console.ReadKey()
+                GoTo startMenu
+        End Select
+    End Sub
 End Module
