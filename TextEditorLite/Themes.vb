@@ -110,25 +110,25 @@ startMenu:
 startTitle:
 
         System.Console.ForegroundColor = ConsoleColor.Cyan
-        System.Console.Write("Write menu color(Black - White - Red - Blue - Magenta - Green - Yellow) : ")
+        System.Console.Write("Write title color(Black - White - Red - Blue - Magenta - Green - Yellow) : ")
         System.Console.ForegroundColor = ConsoleColor.Yellow
-        Dim menu As String = Console.ReadLine().ToLower()
+        Dim title As String = Console.ReadLine().ToLower()
         System.Console.ResetColor()
-        Select Case menu
+        Select Case title
             Case "black"
-                menuColor = ConsoleColor.Black
+                titleColor = ConsoleColor.Black
             Case "white"
-                menuColor = ConsoleColor.White
+                titleColor = ConsoleColor.White
             Case "red"
-                menuColor = ConsoleColor.Red
+                titleColor = ConsoleColor.Red
             Case "blue"
-                menuColor = ConsoleColor.DarkCyan
+                titleColor = ConsoleColor.DarkCyan
             Case "magenta"
-                menuColor = ConsoleColor.Magenta
+                titleColor = ConsoleColor.Magenta
             Case "green"
-                menuColor = ConsoleColor.Green
+                titleColor = ConsoleColor.Green
             Case "yellow"
-                menuColor = ConsoleColor.Yellow
+                titleColor = ConsoleColor.Yellow
 
             Case Else
                 System.Console.ForegroundColor = ConsoleColor.White
