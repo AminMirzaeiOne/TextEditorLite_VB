@@ -19,7 +19,7 @@
     End Function
 
     Public Function TextToUndo(undo As String) As String Implements ICommand.TextToUndo
-        Throw New NotImplementedException()
+        Return OriginalString.Substring(0, undo.Length + toBeRemovedChars)
     End Function
 
 End Class
