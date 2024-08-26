@@ -71,6 +71,7 @@
   <ItemGroup>
     <Compile Include="Append.vb" />
     <Compile Include="BackSpace.vb" />
+    <Compile Include="Clear.vb" />
     <Compile Include="ICommand.vb" />
     <Compile Include="Module1.vb" />
     <Compile Include="My Project\AssemblyInfo.vb" />
