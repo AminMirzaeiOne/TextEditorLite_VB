@@ -73,7 +73,28 @@
                 Dim indexToRemove As String = Console.ReadLine()
                 Dim toRemove As BackSpace = New BackSpace(Integer.Parse(indexToRemove), myTextEditor.currentText)
 
+                ' Calling Methods from TextEditor Class
+                myTextEditor.ExecuteICommand(toRemove)
+                myTextEditor.DisplayProcessed()
+                Console.WriteLine(vbLf & "Please Press Any key to Continue....")
+                Console.ReadKey()
+                Console.Clear()
 
+#End Region
+                myTextEditor.DisplayCurrentText()
+
+            ElseIf Equals("4", userOption) Then
+                Console.Clear()
+                myTextEditor.Undo()
+                Console.WriteLine(vbLf & "Please Press Any key to Continue....")
+                Console.ReadKey()
+                Console.Clear()
+                myTextEditor.DisplayCurrentText()
+
+            ElseIf Equals("5", userOption) Then
+                Console.ReadKey()
+                Environment.Exit(0)
+            End If
         End While
     End Sub
 
