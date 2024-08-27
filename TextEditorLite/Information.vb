@@ -30,5 +30,6 @@
         Console.WriteLine("   ║                                   ║")
         Console.WriteLine("   ╚═══════════════════════════════════╝")
         System.Console.ResetColor()
+        Console.ReadKey()
     End Sub
 End Module

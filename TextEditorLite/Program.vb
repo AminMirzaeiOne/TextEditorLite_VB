@@ -1,19 +1,46 @@
 ﻿Module Program
 
     Sub Main()
+startQuestion:
+        System.Console.Write("Themes or TextEditor or information ? : ")
+        Dim x As String = Console.ReadLine().ToLower()
+        If x = "themes" Then
+            Themes.QuestionForeColor()
+            Themes.QuestionBackColor()
+            Themes.QuestionMenuColor()
+            Themes.QuestionTitleColor()
+            RunTextEditor()
+        ElseIf x = "texteditor" Then
+            RunTextEditor()
+        ElseIf x = "information" Then
+            Information.DrawInfo()
+        Else
+            System.Console.ForegroundColor = ConsoleColor.White
+            System.Console.BackgroundColor = ConsoleColor.Red
+            System.Console.WriteLine("It is invalid")
+            System.Console.ResetColor()
+            System.Console.ReadKey()
+            GoTo startQuestion
+
+        End If
+
+    End Sub
+
+    Public Sub RunTextEditor()
+        Console.BackgroundColor = Themes.backColor
         Console.Clear()
-        Console.ForegroundColor = ConsoleColor.Black
-        Console.BackgroundColor = ConsoleColor.DarkCyan
+        Console.ForegroundColor = Themes.titleColor
         Dim logo = "Text Editor | v1.0 - AminMirzaeiOne"
         Console.SetCursorPosition((Console.WindowWidth - logo.Length) / 2, Console.CursorTop)
         Console.WriteLine(logo)
-
+        System.Console.ForegroundColor = ConsoleColor.Black
 
         Console.WriteLine("   Enter Your Current Text   " & vbLf)
         Console.Write(">>:")
         Dim initialUserInput As String = Console.ReadLine()
+        Console.ForegroundColor = Themes.foreColor
         Dim myTextEditor As TextEditor = New TextEditor(initialUserInput)
-
+        System.Console.ResetColor()
 
         While True
             Console.SetCursorPosition((Console.WindowWidth - logo.Length) / 2, Console.CursorTop)
