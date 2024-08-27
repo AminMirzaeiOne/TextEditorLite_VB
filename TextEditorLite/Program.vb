@@ -33,7 +33,7 @@ startQuestion:
         Dim logo = "Text Editor | v1.0 - AminMirzaeiOne"
         Console.SetCursorPosition((Console.WindowWidth - logo.Length) / 2, Console.CursorTop)
         Console.WriteLine(logo)
-        System.Console.ForegroundColor = ConsoleColor.Black
+        System.Console.ForegroundColor = foreColor
 
         Console.WriteLine("   Enter Your Current Text   " & vbLf)
         Console.Write(">>:")
