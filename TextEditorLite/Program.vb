@@ -38,19 +38,20 @@ startQuestion:
         Console.WriteLine("   Enter Your Current Text   " & vbLf)
         Console.Write(">>:")
         Dim initialUserInput As String = Console.ReadLine()
-        Console.ForegroundColor = Themes.foreColor
         Dim myTextEditor As TextEditor = New TextEditor(initialUserInput)
-        System.Console.ResetColor()
+
 
         While True
+            System.Console.ForegroundColor = titleColor
             Console.SetCursorPosition((Console.WindowWidth - logo.Length) / 2, Console.CursorTop)
             Console.WriteLine(logo)
+            System.Console.ForegroundColor = menuColor
             Console.WriteLine(vbLf & "Enter your preference" & vbLf)
             Console.WriteLine("[1] Add " & vbLf & "[2] Clear " & vbLf & "[3] Remove " & vbLf & "[4] Undo" & vbLf & "[5] Exit" & vbLf & vbLf)
             Console.Write(">>:")
 
+            System.Console.ForegroundColor = foreColor
             Dim userOption As String = Console.ReadLine()
-
 
             If Equals("1", userOption) Then
 #Region "Single Operation"
