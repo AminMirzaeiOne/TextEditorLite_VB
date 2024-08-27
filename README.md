@@ -27,5 +27,7 @@ A simple text editor program under the console that can perform practical operat
 
 
 <h2>📷 Screenshots</h2>
-<img width="674" alt="Capture16" src="https://github.com/user-attachments/assets/60d526fb-2d8b-4a82-862c-b84dee0882f5">
-<img width="676" alt="Capture17" src="https://github.com/user-attachments/assets/e6797840-bd73-4fb2-949c-ad16a434b76e">
+<img width="674" alt="Capture28" src="https://github.com/user-attachments/assets/dcc219cf-6250-4ad3-84ac-d5b45fb0ea11">
+<img width="675" alt="Capture29" src="https://github.com/user-attachments/assets/671f7b92-a583-4f21-bf0f-2a6d472a734c">
+<img width="673" alt="Capture30" src="https://github.com/user-attachments/assets/b06ef5a8-2970-4e48-bc42-11302f2237e2">
+<img width="675" alt="Capture31" src="https://github.com/user-attachments/assets/69afec51-9da6-4b9c-858f-f28f8e349693">
